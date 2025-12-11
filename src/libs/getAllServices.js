@@ -170,7 +170,7 @@ const getAllServices = () => {
     {
       id: 17,
       title: "Beneficios para Colaboradores",
-      desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      desc: "Empleto formal y estable, Ingreso competitivos, Apoyo y desarrollo, Compromiso con el bienestar.",
       detailsImg: projectImage14,
       img: serviceImage16,
       category: "Financial Restructuring",
@@ -179,7 +179,7 @@ const getAllServices = () => {
     {
       id: 18,
       title: "Beneficios para Colaboradores",
-      desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      desc: "Empleto formal y estable, Ingreso competitivos, Apoyo y desarrollo, Compromiso con el bienestar.",
       detailsImg: projectImage13,
       img: serviceImage9,
       category: "Business Process",
@@ -188,7 +188,7 @@ const getAllServices = () => {
     {
       id: 19,
       title: "Beneficios para empresas",
-      desc: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      desc: "Optimización logística, Rapidez en última milla, Transparencia total, Aliado estratégico.",
       detailsImg: projectImage12,
       img: serviceImage10,
       category: "Financial Restructuring",
