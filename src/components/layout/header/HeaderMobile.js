@@ -1,9 +1,11 @@
 import Image from "next/image";
-import logoImage1 from "@/assets/img/logo/Logo_1.png";
+// import logoImage1 from "@/assets/img/logo/Logo_1.png";
 import Link from "next/link";
 import CartHeader from "./CartHeader";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import { useHeaderContex } from "@/providers/HeaderContex";
+
+const NVO_LOGO_URL = "https://pub-428bba053a0f499782c7cbc7a5af5402.r2.dev/banco%20de%20imagenes/Logo%20NVO%20principal.png";
 
 const HeaderMobile = () => {
   const { style } = useHeaderContex();
@@ -37,10 +39,13 @@ const HeaderMobile = () => {
           <div className="mobile__log--title">
             <Link className="mobile__log--link" href="/">
               <Image
-                placeholder="blur"
+                // placeholder="blur"
                 className="mobile__log--img"
-                src={logoImage1}
+                src={NVO_LOGO_URL}
                 alt="logo-img"
+                width={100}
+                height={50}
+                style={{ objectFit: 'contain' }}
               />
             </Link>
           </div>
@@ -48,6 +53,7 @@ const HeaderMobile = () => {
 
         <div className="headerarea__component mobile__component__right">
           <div className="headerarea__right">
+            {/* Ocultado Cart y Quote para NVO
             <div className="headerarea__cart__wraper">
               <div className="headerarea__cart__icon">
                 <Link href="#">
@@ -102,6 +108,7 @@ const HeaderMobile = () => {
                 button={!style || style === 3 ? "" : "white"}
               />
             </div>
+             */}
           </div>
         </div>
       </div>
