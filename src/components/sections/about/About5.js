@@ -26,7 +26,7 @@ const About5 = ({ type, desc, title, img }) => {
                 placeholder="blur"
                 alt=""
               />
-              <div className="about__number">
+              {/* <div className="about__number">
                 <div className="about__number__inner about__number__position">
                   <span>29</span>
                   <p>Years Experience</p>
@@ -60,7 +60,7 @@ const About5 = ({ type, desc, title, img }) => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="section__strock__line__animation">
                 <Image
                   className="ssla__animation ssl__img__1"
