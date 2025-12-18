@@ -7,7 +7,7 @@ const Copyright = () => {
         <div className="col-xl-6 col-lg-6 col-md-6 col-12">
           <div className="copyright__left">
             <p>
-              Copyright © 2025 <Link href="/">NVO Latam.</Link> Todos los derechos reservados.
+              Copyright © 2025 <Link className="required" href="/">NVO Latam.</Link> Todos los derechos reservados.
             </p>
           </div>
         </div>
@@ -15,10 +15,10 @@ const Copyright = () => {
           <div className="copyright__right">
             <ul>
               <li>
-                <Link href="#">Politica de Privacidad ||</Link>
+                <Link href="/politica-de-privacidad">Politica de Privacidad ||</Link>
               </li>{" "}
               <li>
-                <Link href="#">Terminos y Condiciones</Link>
+                <Link href="/terminos-y-condiciones">Terminos y Condiciones</Link>
               </li>
             </ul>
           </div>

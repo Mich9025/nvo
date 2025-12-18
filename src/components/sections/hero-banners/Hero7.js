@@ -42,7 +42,7 @@ const Hero7 = ({ type }) => {
                 </div>
                   <div className="herobanner__button">
                     <ButtonPrimary
-                      text={"NUESTROS BENEFICIOS"}
+                      text={"Conoce nuestros beneficios"}
                       path={"#service__area"}
                     />
                     {/* <div className="video__button">

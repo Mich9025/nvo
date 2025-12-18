@@ -11,19 +11,17 @@ export const metadata = {
 const services = getAllServices();
 export default function ServicesDetails({ params }) {
   const { id } = params;
-  const isExistService = services?.find(({ id: id1 }) => id1 === parseInt(id));
+  const isExistService = services?.find(({ id: id1 }) => id1 === id);
   if (!isExistService) {
     notFound();
   }
   return (
     <PageWrapper
       headerStyle={3}
-      footerStyle={3}
       headerBg={"black"}
-      footerBg={"black"}
     >
       <ThemeController />
-      <ServiceDetailsMain />
+      <ServiceDetailsMain service={services}/>
     </PageWrapper>
   );
 }

@@ -11,25 +11,31 @@ const NavbarMobile = () => {
     {
       name: "INICIO",
       toggler: false,
-      path: "#",
+      path: "/",
       dropdown: null,
     },
     {
       name: "QUIÉNES SOMOS",
       toggler: false,
-      path: "#about__mission__area",
+      path: "/quienes-somos",
       dropdown: null,
     },
     {
-      name: "BENEFICIOS",
+      name: "SERVICIOS",
       toggler: false,
-      path: "#service__area",
+      path: "/servicios",
+      dropdown: null,
+    },
+    {
+      name: "TRABAJA CON NOSOTROS",
+      toggler: false,
+      path: "/trabaja-con-nosotros",
       dropdown: null,
     },
     {
       name: "CONTACTO",
       toggler: false,
-      path: "#tb__contact",
+      path: "/contacto",
       dropdown: null,
     },
   ];

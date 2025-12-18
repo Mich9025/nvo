@@ -8,10 +8,8 @@ export const metadata = {
 export default function Services() {
   return (
     <PageWrapper
-      headerStyle={3}
-      footerStyle={3}
+      headerStyle={3}      
       headerBg={"black"}
-      footerBg={"black"}
     >
       <ThemeController />
       <ServiceMain />

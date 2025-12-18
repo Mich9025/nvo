@@ -8,27 +8,28 @@ const Navbar = () => {
     {
       name: "INICIO",
       icon: false,
-      path: "#",
+      path: "/",
       dropdown: null,
     },
     {
       name: "QUIÉNES SOMOS",
       icon: false,
-      path: "#about__mission__area",
+      path: "/quienes-somos",
       dropdown: null,
     },
     {
-      name: "BENEFICIOS",
+      name: "SERVICIOS",
       icon: false,
-      path: "#service__area",
+      path: "/servicios",
       dropdown: null,
     },
     {
-      name: "CONTACTO",
-      icon: false,
-      path: "#tb__contact",
+      name: "TRABAJA CON NOSOTROS",
+      toggler: false,
+      path: "/trabaja-con-nosotros",
       dropdown: null,
     },
+
     /* Comentado - Projects
     {
       name: "PROJECTS",

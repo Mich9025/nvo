@@ -8,8 +8,8 @@ const ContactPrimary = () => {
     name: "",
     email: "",
     phone: "",
-    subject: "Subject:",
-    message: "write a message....",
+    subject: "Asunto:",
+    message: "Escribe tu mensaje...",
   });
   const [status, setStatus] = useState("");
 
@@ -39,14 +39,14 @@ const ContactPrimary = () => {
           name: "",
           email: "",
           phone: "",
-          subject: "Subject:",
-          message: "write a message....",
+          subject: "Asunto:",
+          message: "Escribe tu mensaje...",
         });
       } else {
-        setStatus("Failed to send email.");
+        setStatus("Error al enviar el correo.");
       }
     } catch (error) {
-      setStatus("Failed to send email.");
+      setStatus("Error al enviar el correo.");
     }
   };
 
@@ -61,10 +61,10 @@ const ContactPrimary = () => {
           >
             <div className="section__title text-center sp_bottom_80">
               <div className="section__title__button">
-                <span className="text__gradient ">Contact</span>
+                <span className="text__gradient ">Contáctanos</span>
               </div>
               <div className="section__title__heading contact__heading">
-                <h3>Consulting support is just a Call or email away.</h3>
+                <h3>Soporte experto a un clic de distancia.</h3>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ const ContactPrimary = () => {
             data-aos="fade-up"
             data-aos-duration="1500"
           >
-            <div className="contact__input__wrapper contact__grident__bg">
+            <div className="contact__input__wrapper">
               <form
                 id="contact-form"
                 className="contact-form"
@@ -82,12 +82,13 @@ const ContactPrimary = () => {
                 <div className="row">
                   <div className="col-xl-12">
                     <div className="contact__input">
+                      <label className="contact__label" htmlFor="con_name">Nombre Completo</label>
                       <input
                         className="contact__common__input"
                         type="text"
                         name="name"
                         id="con_name"
-                        placeholder="Your Name"
+                        placeholder="Ej. Juan Pérez"
                         value={formData.name}
                         onChange={handleChange}
                         required
@@ -96,6 +97,7 @@ const ContactPrimary = () => {
                   </div>
                   <div className="col-xl-6">
                     <div className="contact__input">
+                      <label className="contact__label" htmlFor="con_email">Correo Electrónico</label>
                       <input
                         className="contact__common__input"
                         type="email"
@@ -104,48 +106,56 @@ const ContactPrimary = () => {
                         onChange={handleChange}
                         required
                         id="con_email"
-                        placeholder="Email"
+                        placeholder="correo@empresa.com"
                       />
                     </div>
                   </div>
                   <div className="col-xl-6">
                     <div className="contact__input">
+                      <label className="contact__label" htmlFor="con_phone">Teléfono</label>
                       <input
                         className="contact__common__input"
                         type="text"
                         name="phone"
+                        id="con_phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="Phone"
+                        placeholder="+57 300 123 4567"
                         required
                       />
                     </div>
                   </div>
                   <div className="col-xl-12">
-                    <select
-                      className="contact__common__input"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      id="subject"
-                    >
-                      <option value="volvo">Subject:</option>
-                      <option value="saab">Saab</option>
-                      <option value="mercedes">Mercedes</option>
-                      <option value="audi">Audi</option>
-                    </select>
+                    <div className="contact__input">
+                      <label className="contact__label" htmlFor="subject">Asunto</label>
+                      <select
+                        className="contact__common__input"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        id="subject"
+                      >
+                        <option value="Servicio al Cliente">Servicio al Cliente</option>
+                        <option value="Ventas">Ventas</option>
+                        <option value="Soporte">Soporte</option>
+                        <option value="Otro">Otro</option>
+                      </select>
+                    </div>
                   </div>
                   <div className="col-xl-12">
-                    <textarea
-                      className="contact__common__input"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      id="con_message"
-                      cols="30"
-                      rows="10"
-                    />
+                    <div className="contact__input">
+                      <label className="contact__label" htmlFor="con_message">Mensaje</label>
+                      <textarea
+                        className="contact__common__input"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                        id="con_message"
+                        cols="30"
+                        rows="10"
+                      />
+                    </div>
                   </div>
                   <div className="col-xl-12">
                     <div className="contact__button">
@@ -155,7 +165,7 @@ const ContactPrimary = () => {
                         className="default__button"
                         name="submit"
                       >
-                        SEND MESSAGE
+                        ENVIAR MENSAJE
                       </button>
                       {status ? <p className="form-messege">{status}</p> : ""}
                     </div>
@@ -228,9 +238,9 @@ const ContactPrimary = () => {
                   </span>
                 </div>
                 <div className="contact__text">
-                  <h6>Hours:</h6>
-                  <p>Monday - Friday: 8 AM - 5:30 PM</p>
-                  <p>Saturday - Sunday: Closed</p>
+                  <h6>Horario de Atención:</h6>
+                  <p>Lunes - Viernes: 8 AM - 5:30 PM</p>
+                  <p>Sábado - Domingo: Cerrado</p>
                 </div>
               </div>
 
@@ -307,9 +317,9 @@ const ContactPrimary = () => {
                   </span>
                 </div>
                 <div className="contact__text">
-                  <h6>Call Us:</h6>
-                  <p>(+000) 987-3267</p>
-                  <p>+88 568 956 238</p>
+                  <h6>Llámanos:</h6>
+                  <p>(+57) 300 123 4567</p>
+                  <p>(+57) 601 123 4567</p>
                 </div>
               </div>
 
@@ -365,9 +375,9 @@ const ContactPrimary = () => {
                   </span>
                 </div>
                 <div className="contact__text">
-                  <h6>Location:</h6>
-                  <p>242 Carlyle RdZebulon,</p>
-                  <p>North Carolina(NC), 27597</p>
+                  <h6>Ubicación:</h6>
+                  <p>Bogotá, Colombia</p>
+                  <p>Calle 26 # 69-76</p>
                 </div>
               </div>
             </div>

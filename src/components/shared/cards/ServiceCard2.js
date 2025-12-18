@@ -10,11 +10,11 @@ const ServiceCard2 = ({ service, type }) => {
     <div
       className={`${
         currentCategory ? "col-xl-3" : "col-xl-4"
-      }  col-lg-4 col-md-6 col-sm-6 col-12`}
+      }  col-lg-4 col-md-6 col-sm-6 col-12 h-100 d-flex`}
       data-aos="fade-up"
       data-aos-duration={duration}
     >
-      <div className="service__single__wraper service__single__wraper--2 common__gradient__bg single__transform">
+      <div className="service__single__wraper service__single__wraper--2 common__gradient__bg single__transform h-100 d-flex flex-column">
         <div className="service__single__inner">
           <div className="service__img">
             <Image src={img} alt="" />
@@ -47,11 +47,11 @@ const ServiceCard2 = ({ service, type }) => {
               </svg>
             </div>
           </div>
-          <div className="service__content">
+          <div className="service__content flex-grow-1">
             <div className="service__heading">
               <h5 className="text-uppercase">
-                <Link href={`/services/${id}`}>
-                  {currentCategory ? title?.slice(0, 13) : title?.slice(0, 20)}
+                <Link href={`/servicios/${id}`}>
+                  {title}
                 </Link>
               </h5>
             </div>
@@ -64,7 +64,7 @@ const ServiceCard2 = ({ service, type }) => {
               className={`direction__btn  ${
                 type === 2 ? "" : "direction__btn--2"
               }`}
-              href={`/services/${id}`}
+              href={`/servicios/${id}`}
             >
               <svg
                 width="34"

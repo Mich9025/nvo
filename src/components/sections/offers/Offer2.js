@@ -113,11 +113,11 @@ const Offer2 = ({ type, isVideo, img, title, tag, id, pt }) => {
                 <div className="about__button">
                   <Link
                     className={`default__button  ${
-                      type === 2 ? "" : "btn__black"
+                      type === 2 ? "" : "btn__blue"
                     }`}
-                    href="/about"
+                    href="/quienes-somos"
                   >
-                    CONOCE MÁS
+                    Conoce Quiénes Somos
                   </Link>
                 </div>
               </div>

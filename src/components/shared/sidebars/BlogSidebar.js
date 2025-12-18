@@ -8,9 +8,9 @@ import Download from "./widgets/Download";
 const BlogSidebar = ({ sidebar }) => {
   return (
     <div className="service__details__sidebar sidebar">
-      <BlogSearch />
+      {/* <BlogSearch /> */}
 
-      <BlogCategories />
+      {/* <BlogCategories /> */}
 
       {sidebar === "faq" || sidebar === "service" ? "" : <RecentPosts />}
 

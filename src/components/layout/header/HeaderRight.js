@@ -62,13 +62,11 @@ const HeaderRight = () => {
               <CartHeader />
             </div>
             */}
-            {/* <div className="headerarea__button">
-              <ButtonPrimary
-                text="CONTÁCTANOS"
-                button={!style ? "" : "white"}
-                path="/contact"
-              />
-            </div> */}
+            <div className="headerarea__button">
+              <Link href="/contacto" className="default__button btn__pink">
+                CONTACTO
+              </Link>
+            </div>
           </>
         )}
       </div>

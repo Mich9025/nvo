@@ -11,51 +11,57 @@ const Testimonials3 = ({ type, pb, pt }) => {
   const slides = [
     {
       id: 1,
-      name: "Mattie Warner",
+      name: "María González",
       img: testimonialImage4,
       imgSmall: testimonialImage4,
-      desig: "Business Man",
-      desc: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.”",
+      desig: "Gerente de Logística",
+      desc: "Trabajar con NVO ha transformado nuestra operación. La rapidez y confiabilidad en cada entrega superó nuestras expectativas. Son verdaderos aliados estratégicos.",
+      rating: 5,
     },
     {
       id: 2,
-      name: "Kristin Gilbert",
+      name: "Carlos Ramírez",
       img: testimonialImage5,
       imgSmall: testimonialImage5,
-      desig: "Business Man",
-      desc: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.”",
+      desig: "Director de Operaciones",
+      desc: "La transparencia total y el rastreo en tiempo real nos dan la tranquilidad que necesitamos. NVO entiende lo que significa ser un socio de negocios confiable.",
+      rating: 5,
     },
     {
       id: 3,
-      name: "Arlene Miles",
+      name: "Ana Martínez",
       img: testimonialImage6,
       imgSmall: testimonialImage6,
-      desig: "Business Man",
-      desc: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.”",
+      desig: "CEO",
+      desc: "La optimización logística que logramos con NVO ha sido impresionante. Reducimos tiempos y costos significativamente. Altamente recomendado.",
+      rating: 5,
     },
     {
       id: 4,
-      name: "Mattie Warner",
+      name: "Roberto Silva",
       img: testimonialImage4,
       imgSmall: testimonialImage4,
-      desig: "Business Man",
-      desc: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.”",
+      desig: "Gerente de Distribución",
+      desc: "El servicio express de NVO es simplemente excepcional. Cada entrega llega a tiempo, cada vez. No podríamos pedir un mejor servicio.",
+      rating: 5,
     },
     {
       id: 5,
-      name: "Mattie Warner",
+      name: "Patricia López",
       img: testimonialImage5,
       imgSmall: testimonialImage5,
-      desig: "Business Man",
-      desc: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.”",
+      desig: "Directora Comercial",
+      desc: "La eficiencia en la distribución multientrega nos ha permitido expandir nuestro alcance. NVO hace que lo complejo parezca simple.",
+      rating: 5,
     },
     {
       id: 6,
-      name: "Arlene Miles",
+      name: "Diego Torres",
       img: testimonialImage6,
       imgSmall: testimonialImage6,
-      desig: "Business Man",
-      desc: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.”",
+      desig: "Empresario",
+      desc: "Desde que trabajamos con NVO, la satisfacción de nuestros clientes ha aumentado notablemente. Su compromiso con la excelencia es evidente en cada detalle.",
+      rating: 5,
     },
   ];
   return (
@@ -84,13 +90,13 @@ const Testimonials3 = ({ type, pb, pt }) => {
             >
               <div className="section__title__button">
                 <span className={type === 2 ? "text__gradient" : ""}>
-                  Testimonial
+                  Testimonios
                 </span>
               </div>
               <div className="section__title__heading">
                 <h3>
-                  SEE WHAT OTHER ARE <br />
-                  SAYING
+                  VE LO QUE DICEN <br />
+                  NUESTROS CLIENTES
                 </h3>
               </div>
             </div>

@@ -10,9 +10,7 @@ export default function About() {
   return (
     <PageWrapper
       headerStyle={3}
-      footerStyle={3}
       headerBg={"black"}
-      footerBg={"black"}
     >
       <ThemeController />
       <AboutMain />

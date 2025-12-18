@@ -208,7 +208,7 @@ const About5 = ({ type, desc, title, img }) => {
               )}
 
               <div className="about__button">
-                <ButtonPrimary text={"LEARN MORE ABOUT"} path={"/about"} />
+                <ButtonPrimary text={"Conoce Nuestros Servicios"} path={"/servicios"} />
               </div>
             </div>
           </div>

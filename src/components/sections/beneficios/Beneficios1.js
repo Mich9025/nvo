@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import serviceBgImage3 from "@/assets/img/service/service__bg__3.png";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
-import ServiceCard4 from "@/components/shared/cards/ServiceCard4";
-const Services4 = ({ title, desc, service }) => {
-  const services = getAllBenefits();
+import BeneficiosCard from "@/components/shared/cards/beneficiosCard";
+const Beneficios = ({ title, desc, service }) => {
+  const beneficios = getAllBenefits();
   return (
     <div
       className="service sp_top_120 sp_bottom_130 special__spacing"
@@ -45,8 +45,8 @@ const Services4 = ({ title, desc, service }) => {
           </div>
         </div>
         <div className="row justify-content-center">
-          {services?.map((service, idx) => (
-            <ServiceCard4 key={idx} service={service} />
+          {beneficios?.map((beneficio, idx) => (
+            <BeneficiosCard key={idx} service={beneficio} />
           ))}
 
           {service === 2 ? (
@@ -68,4 +68,4 @@ const Services4 = ({ title, desc, service }) => {
   );
 };
 
-export default Services4;
+export default Beneficios;

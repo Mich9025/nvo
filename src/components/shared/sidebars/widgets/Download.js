@@ -9,7 +9,7 @@ const Download = () => {
       data-aos-duration="2100"
     >
       <div className="sidebar__title">
-        <h5>Download Brochure:</h5>
+        <h5>Descargar Brochure:</h5>
       </div>
       <div className="sidebar__button">
         <Link
@@ -17,14 +17,16 @@ const Download = () => {
           target="_blank"
           href="/download.pdf"
         >
-          Download PDF<i className="icofont-file-pdf"></i>
+          Descargar PDF
+          {/* <i className="icofont-file-pdf"></i> */}
         </Link>
         <Link
           className="default__button btn__black"
           target="_blank"
           href="/download.docx"
         >
-          Download DOC<i className="icofont-file-document"></i>
+          Descargar DOC
+          {/* <i className="icofont-file-document"></i> */}
         </Link>
       </div>
     </div>

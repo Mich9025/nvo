@@ -1,19 +1,16 @@
-import ContactPrimary from "@/components/sections/contacts/ContactPrimary";
-import HeroInner from "@/components/sections/hero-banners/HeroInner";
+"use client";
 import dynamic from "next/dynamic";
 
-const CoverageMap = dynamic(() => import("@/components/sections/coverage/CoverageMap"), { 
+const CoverageMap = dynamic(() => import("./CoverageMap"), { 
     ssr: false,
     loading: () => <div style={{height: "500px", background: "#eee", display: "flex", alignItems: "center", justifyContent: "center"}}>Cargando Mapa...</div>
 });
 
-const ContactMain = () => {
-  return (
-    <main>
-      <HeroInner title={"Contáctanos"} currentItem={"Contacto"} />
-      <ContactPrimary />
-      <div className="container sp_bottom_100">
-        <div className="text-center mb-5">
+const Coverage = () => {
+    return (
+      <div className="coverage-section sp_top_100 sp_bottom_100" style={{ background: "#f9f9f9" }}>
+        <div className="container">
+          <div className="text-center mb-5">
               <h2 style={{ textTransform: "uppercase", fontSize: "48px", fontWeight: "800", marginBottom: "30px" }}>
                   <span style={{ color: "var(--nvoPink)" }}>COBERTURA</span> <span style={{ color: "var(--nvoBlue)" }}>NACIONAL</span>
               </h2>
@@ -21,10 +18,16 @@ const ContactMain = () => {
                   Llegamos a los principales centros económicos y urbanos de Colombia, garantizando conectividad y eficiencia en cada envío.
               </p>
           </div>
-        <CoverageMap />
+          
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+                <CoverageMap />
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
-  );
-};
-
-export default ContactMain;
+    );
+  };
+  
+  export default Coverage;
+  

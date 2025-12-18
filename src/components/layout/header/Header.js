@@ -9,6 +9,7 @@ import { useHeaderContex } from "@/providers/HeaderContex";
 import MobileMenu2 from "./MobileMenu2";
 import HeaderAnimate from "./HeaderAnimate";
 import HeaderTop from "./HeaderTop";
+import TopInfoBar from "./TopInfoBar";
 import stickyHeader from "@/libs/stickyHeader";
 
 const Header = () => {
@@ -20,6 +21,7 @@ const Header = () => {
   return (
     <>
       {/* {isNotHeaderTop ? "" : style === 3 ? <HeaderAnimate /> : ""} */}
+      <TopInfoBar />
       <header>
         <div
           className={`headerarea ${bg === "black" ? "bg__black" : ""} ${

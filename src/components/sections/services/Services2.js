@@ -11,7 +11,7 @@ const Services2 = ({ all, service, type, title, pt, pb, isBg, isNotTitle }) => {
   const currentCategory = useSearchParams().get("category");
   const allServices = getAllServices();
   const services = allServices
-    ?.slice(all ? 0 : 10, all ? 6 : 13)
+    ?.slice(0, 10)
     .filter(({ category }) =>
       currentCategory
         ? category.toLowerCase().split(" ").join("-") === currentCategory
@@ -24,7 +24,7 @@ const Services2 = ({ all, service, type, title, pt, pb, isBg, isNotTitle }) => {
         service === 2 && !isBg
           ? {}
           : {
-              background: `var(--pinkcolor) url('${
+              background: `var(--greyColor) url('${
                 type === 2 ? serviceBgImage5.src : serviceBgImage2.src
               }')`,
             }
@@ -64,7 +64,7 @@ const Services2 = ({ all, service, type, title, pt, pb, isBg, isNotTitle }) => {
               </div>
             </div>
           )}
-          <div className="row">
+          <div className="row align-items-stretch d-flex">
             {!services?.length ? (
               <Nodata text={"No Service"} />
             ) : (

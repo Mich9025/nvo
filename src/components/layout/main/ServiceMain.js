@@ -8,7 +8,7 @@ const ServiceMain = () => {
   const currentCategory = useSearchParams().get("category");
   return (
     <main>
-      <HeroInner title={"Service Page"} currentItem={"Service Page"} />
+      <HeroInner title={"Servicios"} currentItem={"Servicios"} />
       <Services2
         service={2}
         isBg={true}
