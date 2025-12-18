@@ -25,7 +25,7 @@ const Navbar = () => {
     },
     {
       name: "TRABAJA CON NOSOTROS",
-      toggler: false,
+      icon: false,
       path: "/trabaja-con-nosotros",
       dropdown: null,
     },
