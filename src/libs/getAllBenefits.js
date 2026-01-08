@@ -5,24 +5,24 @@ const getAllBenefits = () => {
   const benefits = [
     {
       id: 1,
-      title: "Beneficios Colaboradores",
-      category: "Colaboradores",
+      title: "Beneficios Aliados",
+      category: "Aliados",
       benefits: [
-        {
-          icon: "check",
-          text: "Empleo formal y estable"
-        },
         {
           icon: "check",
           text: "Ingresos competitivos"
         },
         {
           icon: "check",
-          text: "Apoyo y desarrollo"
+          text: "Soporte constante"
         },
         {
           icon: "check",
-          text: "Compromiso con el bienestar"
+          text: "Pagos semanales"
+        },
+        {
+          icon: "check",
+          text: "Registro inmediato"
         }
       ],
       img: serviceImage1,

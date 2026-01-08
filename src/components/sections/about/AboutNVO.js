@@ -1,5 +1,6 @@
 import Image from "next/image";
 import aboutImage4 from "@/assets/img/about/about__4.png";
+import nvoTeam from "@/assets/img/about/nvo_team.jpg";
 
 const AboutNVO = () => {
   return (
@@ -28,10 +29,17 @@ const AboutNVO = () => {
           <div className="col-lg-6 col-md-12">
              {/* Using placeholder or existing image for now, can be updated */}
             <div className="about__img__3" data-tilt>
-              <Image src={aboutImage4} alt="Quienes Somos NVO" />
+              <Image src={nvoTeam} alt="Quienes Somos NVO" />
             </div>
           </div>
         </div>
+        {/* <div className="row">
+          <div className="col-lg-6 col-md-12">
+            <div className="about__img__3" data-tilt>
+              <Image src={nvoTeam} alt="Quienes Somos NVO" />
+            </div>
+          </div>
+        </div> */}
       </div>
     </div>
   );

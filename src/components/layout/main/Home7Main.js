@@ -28,7 +28,7 @@ const Home7Main = () => {
         title={"BENEFICIOS"}
         service={2}
         desc={
-          "Beneficios para nuestros colaboradores y tu empresa"
+          "Beneficios para nuestros aliados y tu empresa"
         }
       />
       {/* <Video video={2} /> */}

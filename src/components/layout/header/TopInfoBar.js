@@ -10,7 +10,7 @@ const TopInfoBar = () => {
               {/* Left side - Contact info */}
               <div className="top-info-bar__left">
                 <div className="top-info-bar__item">
-                  <svg
+                  {/* <svg
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
@@ -22,10 +22,10 @@ const TopInfoBar = () => {
                       fill="white"
                     />
                   </svg>
-                  <span>info@nvo.com</span>
+                  <span>info@nvo.com</span> */}
                 </div>
                 <div className="top-info-bar__item">
-                  <svg
+                  {/* <svg
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
@@ -37,13 +37,13 @@ const TopInfoBar = () => {
                       fill="white"
                     />
                   </svg>
-                  <span>Lun - Vie: 8:00am - 6:00pm</span>
+                  <span>Lun - Vie: 8:00am - 6:00pm</span> */}
                 </div>
               </div>
 
               {/* Right side - Social media */}
               <div className="top-info-bar__right">
-                <Link
+                {/* <Link
                   href="https://facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -61,7 +61,7 @@ const TopInfoBar = () => {
                       fill="white"
                     />
                   </svg>
-                </Link>
+                </Link> */}
                 {/* <Link
                   href="https://twitter.com"
                   target="_blank"
@@ -81,7 +81,7 @@ const TopInfoBar = () => {
                     />
                   </svg>
                 </Link> */}
-                <Link
+                {/* <Link
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -99,7 +99,7 @@ const TopInfoBar = () => {
                       fill="white"
                     />
                   </svg>
-                </Link>
+                </Link> */}
                 <Link
                   href="https://linkedin.com"
                   target="_blank"

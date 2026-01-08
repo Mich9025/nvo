@@ -42,13 +42,13 @@ const Footer = ({ style, footerBg, copyright }) => {
             : {}
         }
       >
-        {!style ? (
+        {/* {!style ? (
           <FooterBadge />
         ) : style === 3 ? (
           <Brands4 type={"footer"} />
         ) : (
           ""
-        )}
+        )} */}
 
         <div className="container">
           {style === 4 ? (
@@ -57,13 +57,13 @@ const Footer = ({ style, footerBg, copyright }) => {
             </div>
           ) : (
             <div className="footer__wrapper sp_bottom_110">
-              <div className="row">
+              <div className="row  justify-content-between">
                 <LogoFooter style={style} />
                 {!style ? <SupportFooter /> : ""}
 
                 {/* <LinksFooter style={style} /> */}
                 <NewsLetter style={style} />
-                {!style ? "" : <GalleryFooter />}
+                {/* {!style ? "" : <GalleryFooter />} */}
               </div>
             </div>
           )}
