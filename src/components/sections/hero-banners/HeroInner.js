@@ -1,11 +1,16 @@
 import Link from "next/link";
-import bannerBgImage from "@/assets/img/about/about__bg__1.jpg";
+import defaultBannerBgImage from "@/assets/img/nosotros/portada.png";
 
-const HeroInner = ({ title, currentItem }) => {
+const HeroInner = ({ title, currentItem, bannerBgImage }) => {
+
   return (
     <div
       className="breadcrumbarea"
-      style={{ background: `url('${bannerBgImage.src}')` }}
+      style={{
+        background: `url('${bannerBgImage || defaultBannerBgImage.src}')`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       <div className="container">
         <div className="row">

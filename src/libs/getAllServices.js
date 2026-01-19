@@ -1,23 +1,11 @@
-import serviceImage1 from "@/assets/img/service/service__1.png";
-import serviceImage2 from "@/assets/img/service/service__2.png";
-import serviceImage3 from "@/assets/img/service/service__3.png";
-import serviceImage4 from "@/assets/img/service/service__4.png";
-import serviceImage6 from "@/assets/img/service/service__6.png";
-import serviceImage7 from "@/assets/img/service/service__7.png";
-import serviceImage8 from "@/assets/img/service/service__8.png";
-import serviceImage9 from "@/assets/img/service/service__9.png";
-import serviceImage10 from "@/assets/img/service/service__10.png";
-import serviceImage11 from "@/assets/img/service/service__11.png";
-import serviceImage12 from "@/assets/img/service/service__12.png";
-import serviceImage13 from "@/assets/img/service/service__13.png";
-import serviceImage14 from "@/assets/img/service/service__14.png";
-import serviceImage15 from "@/assets/img/service/service__15.png";
-import serviceImage16 from "@/assets/img/service/service__16.png";
-import projectImage11 from "@/assets/img/project/project__11.png";
-import projectImage12 from "@/assets/img/project/project__12.png";
-import projectImage13 from "@/assets/img/project/project__13.png";
-import projectImage14 from "@/assets/img/project/project__14.png";
-import projectImage15 from "@/assets/img/service/service__details__1.png";
+
+import serviceImage6 from "@/assets/img/servicios/flotas_dedicadas.png";
+import serviceImage7 from "@/assets/img/servicios/servicio_express.png";
+import serviceImage8 from "@/assets/img/servicios/distribucion_multientrega.png";
+
+import projectImage13 from "@/assets/img/nosotros/portada.png";
+import projectImage14 from "@/assets/img/nosotros/portada.png";
+import projectImage15 from "@/assets/img/nosotros/portada.png";
 const getAllServices = () => {
   const services = [
     {

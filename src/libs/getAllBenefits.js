@@ -1,6 +1,10 @@
 import serviceImage1 from "@/assets/img/service/service__1.png";
 import serviceImage2 from "@/assets/img/service/service__2.png";
 
+//images
+import beneficiosAliados from "@/assets/img/inicio/beneficios-aliados.png";
+import beneficiosEmpresa from "@/assets/img/inicio/beneficios-empresas.png";
+
 const getAllBenefits = () => {
   const benefits = [
     {
@@ -25,7 +29,7 @@ const getAllBenefits = () => {
           text: "Registro inmediato"
         }
       ],
-      img: serviceImage1,
+      img: beneficiosAliados,
       bgColor: "#fff", // Light blue background
       textColor: "var(--nvoBlue)", // White text
     },
@@ -51,7 +55,7 @@ const getAllBenefits = () => {
           text: "Aliado estratégico"
         }
       ],
-      img: serviceImage2,
+      img: beneficiosEmpresa,
       bgColor: "var(--nvoBlue)", // NVO Blue background
       textColor: "#fff", // White text
     },

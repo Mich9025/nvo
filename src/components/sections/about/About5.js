@@ -3,6 +3,7 @@ import aboutImage1 from "@/assets/img/about/about__1.png";
 import aboutSmallImage1 from "@/assets/img/about/about__small__img__1.png";
 import aboutSmallImage2 from "@/assets/img/about/about__small__img__2.png";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
+import aboutImage from "@/assets/img/inicio/home-soluciones.png";
 
 const About5 = ({ type, desc, title, img }) => {
   return (
@@ -22,7 +23,7 @@ const About5 = ({ type, desc, title, img }) => {
             <div className="about__img__wrapper position-relative" data-tilt>
               <Image
                 className="about__img__1"
-                src={img ? img : aboutImage1}
+                src={img ? img : aboutImage}
                 placeholder="blur"
                 alt=""
               />

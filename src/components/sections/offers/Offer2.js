@@ -1,5 +1,5 @@
 import Image from "next/image";
-import aboutHrImage from "@/assets/img/about/about__hr.png";
+import aboutHrImage from "@/assets/img/inicio/home-vision.png";
 import aboutEventImage from "@/assets/img/about/event__about.png";
 import Link from "next/link";
 

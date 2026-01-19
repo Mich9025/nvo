@@ -1,5 +1,5 @@
 import Image from "next/image";
-import aboutImage1 from "@/assets/img/about/about__1.png";
+import aboutImage1 from "@/assets/img/nosotros/propuesta-valor.png";
 import aboutImage2 from "@/assets/img/about/about__2.png";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import Link from "next/link";
@@ -22,11 +22,11 @@ const ValueProposition = () => {
             <div className="col-lg-6 col-md-12 mb-5 mb-lg-0">
                 <div className="about__img__wrapper position-relative">
                     <div className="about__img__1">
-                         <Image src={aboutImage1} alt="NVO Logistics Team" style={{ borderRadius: "10px", width: "90%" }} />
+                         <Image src={aboutImage1} alt="NVO Propuesta de Valor" style={{ borderRadius: "10px", width: "100%" }} />
                     </div>
-                    <div className="about__img__2" style={{ position: "absolute", bottom: "-30px", right: "0", width: "60%", border: "5px solid #fff", borderRadius: "10px" }}>
+                    {/* <div className="about__img__2" style={{ position: "absolute", bottom: "-30px", right: "0", width: "60%", border: "5px solid #fff", borderRadius: "10px" }}>
                          <Image src={aboutImage2} alt="NVO Delivery" style={{ borderRadius: "5px", width: "100%" }} />
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

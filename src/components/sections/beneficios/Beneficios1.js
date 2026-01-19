@@ -4,6 +4,8 @@ import Link from "next/link";
 import serviceBgImage3 from "@/assets/img/service/service__bg__3.png";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import BeneficiosCard from "@/components/shared/cards/beneficiosCard";
+
+
 const Beneficios = ({ title, desc, service }) => {
   const beneficios = getAllBenefits();
   return (

@@ -2,9 +2,8 @@ import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import heroVectorImage1 from "@/assets/img/herobaner/vector__1.png";
 import heroVectorImage4 from "@/assets/img/herobaner/vector__4.png";
 import Image from "next/image";
-import ButtonPopup from "@/components/shared/buttons/ButtonPopup";
-import heroHrImage from "@/assets/img/herobaner/front__img__hr.png";
 import heroSassImage from "@/assets/img/herobaner/herobanner__sass.png";
+import heroBannerImage from "@/assets/img/inicio/hero.png";
 const Hero7 = ({ type }) => {
   return (
     <div
@@ -58,7 +57,7 @@ const Hero7 = ({ type }) => {
               <div className="col-xxl-6 col-xl-5 col-lg-6 col-md-12 col-sm-12">
                 <div className="herobanner__front__img" data-tilt>
                   <Image
-                    src={type === 2 ? heroSassImage : heroHrImage}
+                    src={type === 2 ? heroSassImage : heroBannerImage}
                     alt="HR"
                     placeholder="blur"
                   />

@@ -17,6 +17,7 @@ import Testimonials from "@/components/sections/testimonials/Testimonials";
 import Team from "@/components/sections/team/Team";
 import Blogs from "@/components/sections/blogs/Blogs";
 import Brands from "@/components/sections/brands/Brands";
+
 const Home7Main = () => {
   const { isOnepage } = useHeaderContex();
   return (

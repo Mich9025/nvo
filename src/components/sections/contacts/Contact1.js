@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import contactImage from "@/assets/img/contact/contact.png";
+import contactImage from "@/assets/img/inicio/home-cta.png";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
 import { useHeaderContex } from "@/providers/HeaderContex";
 

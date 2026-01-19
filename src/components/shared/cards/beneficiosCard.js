@@ -15,8 +15,8 @@ const BeneficiosCard = ({ service }) => {
         style={{ backgroundColor: bgColor || "#f5f5f5" }}
       >
         <div className="beneficios__card__content">
-            <div className="beneficios__card__img">
-                <Image src={img} alt="" />
+            <div className="beneficios__card__img ">
+                <Image src={img} alt="" width={200} height={200} />
             </div>
           <h3 style={{ color: textColor || "#003399" }}>{title}</h3>
           <ul className="beneficios__list">
