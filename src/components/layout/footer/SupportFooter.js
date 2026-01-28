@@ -41,9 +41,9 @@ const SupportFooter = () => {
         </div>
         <div className="footer__menu footer__text">
           <ul>           
-            <p>Nancy Lopez</p>
+            <p>Nanny Lopez</p>
             <li><a href="mailto:nancy@nvolatam.com">contacto@nvolatam.com</a></li>
-            <li><a href="tel:+573208657361">+57 320-8657361</a></li>
+            <li><a href="tel:+573112208789">+57 311 220 8789</a></li>
           </ul>
         </div>
       </div>

@@ -19,6 +19,21 @@ const inter = Inter({
 export const metadata = {
   title: "NVO - Soluciones Logísticas | Donde Lo Necesitas",
   description: "NVO - Especialistas en soluciones logísticas rápidas, confiables y seguras. Flotas dedicadas, servicio express y distribución multientrega con cobertura nacional en Colombia.",
+  openGraph: {
+    title: "NVO - Soluciones Logísticas | Donde Lo Necesitas",
+    description: "NVO - Especialistas en soluciones logísticas rápidas, confiables y seguras.",
+    url: "https://nvolatam.com",
+    siteName: "NVO Latam",
+    images: [
+      {
+        url: "/hero.jpeg",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "es_CO",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {

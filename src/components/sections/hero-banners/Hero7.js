@@ -26,11 +26,11 @@ const Hero7 = ({ type }) => {
                 </div>
                 <div className="herobanner__title herobanner__title--2">
                   <h1>
-                    ¡LLEVAMOS TU{" "}
+                    ¡LLEGAMOS{" "}
                     <span className="text__gradient">
-                      MARCA
+                      DIRECTO
                     </span>{" "}
-                    DIRECTO A LAS MANOS DE TUS CLIENTES!
+                    A LAS MANOS DE TUS CLIENTES!
                   </h1>
                 </div>
                 <div className="herobanner__text herobanner__text--2">

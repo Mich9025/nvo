@@ -3,13 +3,25 @@ import Image from "next/image";
 import React from "react";
 
 const CounterUp = () => {
+  const [entregasExitosas, setEntregasExitosas] = React.useState(485612);
+  const [clientesSatisfechos, setClientesSatisfechos] = React.useState(542);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setEntregasExitosas((prev) => prev + 1);
+      setClientesSatisfechos((prev) => prev + 1);
+    }, 3230);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const items = [
     {
       id: 1,
       title: "Ciudades de Cobertura",
       img: null,
-      num: 12,
-      sym: "+",
+      num: 18,
+      sym: "",
       duration: 1500,
       imgDuration: null,
     },
@@ -17,7 +29,7 @@ const CounterUp = () => {
       id: 2,
       title: "Entregas Exitosas",
       img: brandImage3,
-      num: 50000,
+      num: entregasExitosas,
       sym: "+",
       duration: 2000,
       imgDuration: 1800,
@@ -26,17 +38,17 @@ const CounterUp = () => {
       id: 3,
       title: "Clientes Satisfechos",
       img: brandImage3,
-      num: 500,
+      num: clientesSatisfechos,
       sym: "+",
       duration: 2400,
       imgDuration: 2200,
     },
     {
       id: 4,
-      title: "Colaboradores",
+      title: "Aliados",
       img: brandImage3,
-      num: 100,
-      sym: "+",
+      num: 700,
+      sym: "",
       duration: 2800,
       imgDuration: 2600,
     },
