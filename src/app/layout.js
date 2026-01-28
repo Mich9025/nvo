@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import "./globals.css";
 // import "@/assets/css/responsive.css";
 
+
 const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -26,7 +27,7 @@ export const metadata = {
     siteName: "NVO Latam",
     images: [
       {
-        url: "/hero.jpeg",
+        url: "../assets/img/inicio/hero.png",
         width: 800,
         height: 600,
       },
