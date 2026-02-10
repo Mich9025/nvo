@@ -186,7 +186,7 @@ const ContactPrimary = () => {
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
-                <div className="contact__icon">
+                {/* <div className="contact__icon">
                   <span>
                     <svg
                       width="25"
@@ -236,12 +236,12 @@ const ContactPrimary = () => {
                       </defs>
                     </svg>
                   </span>
-                </div>
-                <div className="contact__text">
+                </div> */}
+                {/* <div className="contact__text">
                   <h6>Horario de Atención:</h6>
                   <p>Lunes - Viernes: 8 AM - 5:30 PM</p>
                   <p>Sábado - Domingo: Cerrado</p>
-                </div>
+                </div> */}
               </div>
 
               <div
@@ -318,8 +318,10 @@ const ContactPrimary = () => {
                 </div>
                 <div className="contact__text">
                   <h6>Llámanos:</h6>
-                  <p>(+57) 300 123 4567</p>
-                  <p>(+57) 601 123 4567</p>
+                  <p>Aliados - Nanny Lopez</p>
+                  <p>+57 311 220 8789</p>
+                  <p>Comercial - Sandra García Rios</p>
+                  <p>+57 320-8657361</p>
                 </div>
               </div>
 
