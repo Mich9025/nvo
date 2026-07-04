@@ -3585,10 +3585,14 @@ button.default__button {
   animation: 0.95s ease-in-out 0s 1 normal none running fadeInDown;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   box-shadow: rgba(95, 45, 237, 0.15) 0px 6px 34px;
-  background: rgba(0, 0, 0, 0.9);
+  background: #0a0624;
   top: 0px;
   width: 100%;
   z-index: 99999;
+}
+
+.header__sticky.sticky .mob_menu_wrapper {
+  background: #0a0624;
 }
 
 .headerarea--2.header__sticky.sticky {
